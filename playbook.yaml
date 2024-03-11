@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks: 
+    - package: "name=httpd state=present"
+    - service: "name=https state=started"
