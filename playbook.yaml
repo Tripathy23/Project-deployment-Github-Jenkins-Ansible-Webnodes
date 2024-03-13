@@ -3,4 +3,4 @@
   become_method: sudo
   tasks: 
     - package: "name=httpd state=present"
-    - service: "name=https state=started"
+    - service: "name=httpd state=started"
